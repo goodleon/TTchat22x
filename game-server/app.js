@@ -25,6 +25,11 @@ app.configure('production|development', 'gate', function(){
 		});
 });
 
+
+// app configure
+app.configure('production|development', function() {
+	app.enable('systemMonitor');
+});
 // app configure
 app.configure('production|development', function() {
 	// route configures
